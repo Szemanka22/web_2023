@@ -1,0 +1,30 @@
+body {
+  background-color: lightblue;
+  color: darkblue;
+  font-size: 18px;
+}
+
+h1 {
+  color: green;
+}
+
+p {
+  color: red;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sajatdiv h2 {
+  color: #F01F45;
+}
+#sajatdiv p {
+  color: #4B1BD6;
+}
+
+h1, h2 {
+  border: 5px solid blue;
+}/*# sourceMappingURL=Sass.css.map */

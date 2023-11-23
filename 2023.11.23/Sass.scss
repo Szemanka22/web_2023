@@ -1,0 +1,42 @@
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+}
+$myColor: red;
+
+h1 {
+  $myColor: green;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+  @include bordered(default, grey)
+}
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+}
+#sajatdiv{
+    h2{color: #F01F45
+    }
+    p{color:#4B1BD6
+    }
+
+}
+@import "colors";
+@mixin bordered($color: blue, $width: 1px) {
+    border: $width solid $color;
+}
+h1,h2{
+    @include bordered(blue,5px )
+}
